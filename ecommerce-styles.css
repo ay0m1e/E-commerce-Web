@@ -1,6 +1,6 @@
 body{
     height: 3000px;
-    color: white;
+    color: rgb(254, 253, 253);
     padding: 0;
     margin: 0;
 }
@@ -37,16 +37,81 @@ header{
 
 }
 
+.home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.home button{
+    height: 50px;
+    width: 40%;
+    color: white;
+    background-color: rgba(123, 36, 36, 0.912);
+    border: none;
+    border-radius: 30px;
+}
+
 .right-header{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 30%;
+    position: relative;
 }
+
+.dropdown-menu .dropdown{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    top: 100%;
+    left: 0;
+    bottom: auto;
+    right: auto;
+    opacity: 0;
+    transition: opacity 0.15s;
+    white-space: nowrap;
+    z-index: 100;
+    visibility: hidden;
+}
+
+.dropdown-menu:hover .dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+
+.account-sec .tooltip,
+.search-icon .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -40px;
+    right: -20px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.account-sec:hover .tooltip, 
+.search-icon:hover .tooltip{
+    opacity: 1;
+}
+
+
 
 .search-box{
     background-color: transparent;
-    
+    color: white;
     height: 30px;
     width: 70%;
     border-style:solid;
@@ -57,6 +122,7 @@ header{
     padding-left: 9px;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
+    outline: none;
 }
 
 input::placeholder{
@@ -75,8 +141,13 @@ input::placeholder{
     width: 12px;
 }
 
+.middle-header div{
+    cursor: pointer;
+}
+
 .dropdown-menu{
     display: flex;
+    position: relative;
     gap: 3px;
     align-items: center;
     justify-content: center;
@@ -88,6 +159,7 @@ input::placeholder{
 }
 
 .search-icon{
+    position: relative;
     background-color: transparent;
     border-style:solid;
     border-width: 1px;
