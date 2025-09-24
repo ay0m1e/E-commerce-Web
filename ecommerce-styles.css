@@ -6,19 +6,25 @@ body{
 }
 
 header{
-    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
     z-index: 10;
     background-color: transparent;
     margin: 0;
     padding: 0;
-    height: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 90px;
+    border-bottom: 1px solid white;
+
 }
 
 .home{
     display: flex;
     position: relative;
-    margin-top: -20px;
+    margin-top: -91px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -29,4 +35,71 @@ header{
     background-attachment:scroll;
     height: 600px;
 
+}
+
+.right-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.search-box{
+    background-color: transparent;
+    
+    height: 30px;
+    width: 70%;
+    border-style:solid;
+    border-width: 1px;
+    border-color: white;
+    border-right: none;
+    padding-bottom: 2px;
+    padding-left: 9px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+input::placeholder{
+    color: white;
+}
+
+.middle-header{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    width: 40%;
+}
+
+.middle-header img{
+    width: 12px;
+}
+
+.dropdown-menu{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-header{
+    width: 30%;
+
+}
+
+.search-icon{
+    background-color: transparent;
+    border-style:solid;
+    border-width: 1px;
+    border-color: white;
+    border-left: none;
+    height: 34px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 0;
+}
+
+.account-icon{
+    width: 35px;
+    margin-left: 20px;
 }
