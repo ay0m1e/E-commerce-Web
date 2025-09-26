@@ -204,14 +204,27 @@ input::placeholder{
     border-radius: 30px;
     border-color: silver;
     margin: 0;
+    padding-top: -20px;
 
     
 
 }
 
 .showcase img{
-    width: 200px;
+    
+    width: 250px;
     margin-right: 15px;
+}
+
+.monalisa{
+    border-radius: 30px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    object-fit: cover; 
+    height: 300px; 
+    width: 250px;
+    margin-top: -1px;
+    margin-left: 15px;
 }
 
 .details{
