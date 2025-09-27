@@ -3,6 +3,7 @@ body{
     color: rgb(254, 253, 253);
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 header{
@@ -18,7 +19,6 @@ header{
     padding-right: 20px;
     height: 90px;
     border-bottom: 1px solid white;
-    width: 100%;
 
 }
 
@@ -271,28 +271,33 @@ input::placeholder{
 
 }
 
-.mid-section img{
-    display: inline;
-    position: absolute;
-    width: 60%;
-    max-width: 700px;
-    background-color: white;
-    border-radius: 10px;
-}
+
 
 .mid-section .img1{
-    top: 0;
-    left: 2px;
-    bottom: 50%;
-    right: 80%;
+  display: inline;
+  position: absolute;
+  width: 60%;
+  max-width: 700px;
+  background-color: white;
+  border-radius: 10px;
+  top: 0;
+  left: 2px;
+  bottom: 50%;
+  right: 80%;
     
 }
 
 .mid-section .img2{
-    bottom: 0;
-    right: 0;
-    top: 50%;
-    left: 40%;
+  display: inline;
+  position: absolute;
+  width: 60%;
+  max-width: 700px;
+  background-color: white;
+  border-radius: 10px;
+  bottom: 0;
+  right: 0;
+  top: 50%;
+  left: 40%;
 
 }
 
